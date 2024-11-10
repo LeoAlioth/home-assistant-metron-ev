@@ -84,6 +84,8 @@ class MetronEVHub:
                         self._solar_charging_enable_esp = latest_message.get("Solar_charging_enable_ESP32_reply")
                         self._solar_charging_enable = latest_message.get("Solar_charging_enable")
                         self._total_charging_power = latest_message.get("Total_charging_power")
+                        self._total_house_power = latest_message.get("Total_house_power")
+                        self._total_solar_power = latest_message.get("Total_solar_power")
                         self._this_charge_energy = latest_message.get("This_charge_energy")
                         self._hour_counter = latest_message.get("hour_counter")
                         self._minute_counter = latest_message.get("minute_counter")

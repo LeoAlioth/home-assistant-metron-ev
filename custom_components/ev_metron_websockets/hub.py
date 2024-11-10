@@ -188,6 +188,16 @@ class MetronEVHub:
     def total_charging_power(self) -> str:
         """Return the value of total_charging_power."""
         return self._total_charging_power
+    
+    @property
+    def total_house_power(self) -> str:
+        """Return the value of total_house_power."""
+        return self._total_house_power
+
+    @property
+    def total_solar_power(self) -> str:
+        """Return the value of total_solar_power."""
+        return self._total_solar_power
 
     @property
     def this_charge_energy(self) -> str:
